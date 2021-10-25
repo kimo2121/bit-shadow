@@ -1,0 +1,218 @@
+.roadmap {
+  position: relative;
+  margin-top: 10vh;
+  z-index: 10000000;
+  font-family: "Press Start 2P", cursive;
+}
+.roadmap h1 {
+  font-size: 60px;
+  color: white;
+  margin: 8vh;
+}
+.roads-pile {
+  min-height: 53.5vh;
+  background-color: white;
+  width: 10px;
+  margin: 0 50px;
+}
+.left-container > .road {
+  margin-top: 25vh;
+}
+.right-container > .road {
+  margin-bottom: 25vh;
+}
+.right-container > .road > .road-road {
+  left: 15px;
+}
+
+.pile-connector {
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  position: absolute;
+  margin-top: 190px;
+  background-color: #1d680f;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.right-container > .road:last-child {
+  margin-bottom: 0vh;
+}
+.pile-connector:before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 40px;
+  left: -5px;
+  top: 5px;
+  background-color: #1d680f;
+}
+
+.roads-container {
+  margin-top: 5vh;
+}
+.road {
+  display: flex;
+}
+
+.road-road {
+  margin: 0 auto;
+  box-shadow: -15px 10px 0 #aaa, -5px 25px 0 #aaa;
+  width: 500px;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 30px 50px 30px 70px;
+  text-align: left;
+  margin-bottom: 5vh;
+  position: relative;
+  z-index: 100;
+}
+.road-road:before {
+  width: calc(100% - 30px);
+  height: calc(100% + 20px);
+  top: -10px;
+  left: 15px;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  background-color: white;
+}
+.road-list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.road-num {
+  color: #49ca22;
+  font-size: 22px;
+}
+.road-name {
+  margin-left: 20px;
+  font-size: 22px;
+  color: #111;
+}
+.road-content {
+  color: #666;
+}
+.roads-pile.mob,
+.roadmap.mob {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .road-road {
+    width: 400px;
+    padding: 30px 20px 30px 20px;
+  }
+  .left-container > .road {
+    margin-top: 35vh;
+  }
+  .right-container > .road {
+    margin-bottom: 35vh;
+  }
+  .roads-pile {
+    height: 155vh;
+  }
+  .roadmap h1 {
+    font-size: 32px;
+  }
+  .pile-connector {
+    /* margin-top: 190px; */
+  }
+}
+@media screen and (max-width: 990px) {
+  .road-road {
+    width: 300px;
+  }
+  .left-container > .road {
+    margin-top: 35vh;
+  }
+  .right-container > .road {
+    margin-bottom: 35vh;
+  }
+  .roads-pile {
+    min-height: 175vh;
+  }
+  .roadmap h1 {
+    font-size: 32px;
+  }
+  .pile-connector {
+    margin-top: 260px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .roads-pile.web {
+    display: none;
+  }
+  .roads-pile.mob {
+    display: block;
+    /* height: 130vh; */
+    min-height: 15vh;
+    height: auto;
+  }
+  .roadmap.web {
+    display: none;
+  }
+  .roadmap.mob {
+    display: block;
+  }
+  .road-road {
+    width: 95%;
+    padding: 30px 10px;
+  }
+  .left-container {
+    width: 90%;
+  }
+  .roads-pile.mob {
+    margin-right: 30px;
+    margin-left: 20px;
+    width: 5px;
+  }
+  .left-container > .road {
+    margin-top: 2vh;
+  }
+  .left-container > .road:last-child {
+    margin-bottom: 0;
+  }
+
+  .pile-connector {
+    margin-top: 150px;
+    right: unset;
+    left: 2%;
+    margin-right: unset;
+    width: 30px;
+    height: 30px;
+  }
+
+  .pile-connector:before {
+    width: 40px;
+    height: 20px;
+  }
+}
+/* @media screen and (max-width: 650px) {
+  .roads-pile.mob {
+    height: 135vh;
+  }
+}
+@media screen and (max-width: 580px) {
+  .roads-pile.mob {
+    height: 142vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .roads-pile.mob {
+    height: 150vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .roads-pile.mob {
+    height: 158vh;
+  }
+}
+@media screen and (max-width: 420px) {
+  .roads-pile.mob {
+    height: 165vh;
+  }
+} */

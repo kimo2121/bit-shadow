@@ -1,0 +1,48 @@
+.living-on {
+  margin: 0 auto;
+  margin-top: 15vh;
+  max-width: 1440px;
+  width: 100%;
+}
+.header-living {
+  font-size: 70px;
+  font-family: "Press Start 2P", cursive;
+
+  color: white;
+}
+.header-living span {
+  color: #49ca22;
+}
+.pattern-1 {
+  background-image: url(/src/assets/images/pattern-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 10vh;
+  background-size: contain;
+  height: 745px;
+}
+@media screen and (max-width: 990px) {
+  .pattern-1 {
+    width: 550px;
+    height: 454px;
+  }
+  .pattern-1 img {
+    width: 300px;
+    height: 350px;
+  }
+  .header-living {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pattern-1 {
+    width: 100%;
+    height: 100%;
+  }
+  .pattern-1 img {
+    width: 250px;
+    height: 291px;
+  }
+}

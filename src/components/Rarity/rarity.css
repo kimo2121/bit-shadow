@@ -1,0 +1,129 @@
+.rarity {
+  margin-top: 10vh;
+}
+.rarity-content {
+  background-color: #49ca22;
+  height: 100vh;
+  background-image: url(/src/assets/images/bk-pattern.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 580px;
+  box-sizing: border-box;
+  padding: 50px 0px 50px 50px;
+}
+.rarity h1 {
+  font-size: 60px;
+  position: relative;
+  background-color: #49ca22;
+  padding: 30px 80px;
+  margin: 0 auto !important;
+  color: white;
+  width: fit-content;
+}
+.rarity h1:before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 40px);
+  left: 20px;
+  height: 15px;
+  background-color: #49ca22;
+  top: -15px;
+}
+.left-item {
+  margin: 10px 0;
+  background-color: #1d680f;
+  padding: 30px 20px;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+}
+.left-item.active {
+  background-color: #50b23e;
+}
+.left-content {
+  padding-right: 20px;
+  width: 400px;
+  height: 480px;
+  text-align: left;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.left-content::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(255, 255, 255, 0.548);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.left-content::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+}
+
+.right-content {
+  width: 80%;
+}
+@media screen and (max-width: 1600px) {
+  .left-content {
+    width: 350px;
+    height: 410px;
+  }
+  .left-content span {
+    font-size: 14px;
+  }
+  .rarity-content {
+    padding: 20px 0 20px 20px;
+  }
+  .rarity-content {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .left-content {
+    width: 300px;
+    height: 330px;
+  }
+  .left-content span {
+    font-size: 12px;
+  }
+  .rarity-content {
+    height: 370px;
+  }
+  .right-content {
+    width: 70%;
+  }
+  .rarity h1 {
+    font-size: 32px;
+    margin: 1vh 0;
+  }
+  .rarity h1 {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .left-content {
+    width: 250px;
+    height: 290px;
+  }
+  .left-item {
+    padding: 18px 15px;
+  }
+  .rarity-content {
+    height: 330px;
+  }
+  .left-content span {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,49 @@
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-family: "Press Start 2P", cursive;
+}
+.footer {
+  width: 1300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 40px 0;
+  margin-top: 100px;
+  display: flex;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+  justify-content: space-between;
+}
+@media screen and (max-width: 1400px) {
+  .footer {
+    width: 930px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .footer {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 510px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    width: 90%;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-links a {
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  .footer-ext svg {
+    width: 22px;
+    height: 22px;
+  }
+}

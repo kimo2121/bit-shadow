@@ -1,0 +1,75 @@
+.question-styles {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+.faq-item {
+  padding: 20px 40px !important;
+  background-color: white !important;
+  text-align: left !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+  font-family: "Press Start 2P", cursive !important;
+  position: relative !important;
+  margin-bottom: 5vh !important;
+  box-shadow: -15px 10px 0 #aaa, -5px 25px 0 #aaa !important;
+}
+
+.faq-item:before {
+  position: absolute !important;
+  box-sizing: border-box !important;
+  content: "" !important;
+  width: calc(100% - 30px) !important;
+  height: calc(100% + 20px) !important;
+  top: -10px !important;
+  left: 15px !important;
+  background-color: white !important;
+}
+.MuiAccordionDetails-root {
+  color: #666666 !important;
+}
+.faq-component h1 {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 8vh;
+}
+.accordion-wrpper {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.faq-component {
+  padding: 50px 0;
+}
+.MuiTypography-root {
+  font-family: "Press Start 2P", cursive !important;
+}
+@media screen and (max-width: 1400px) {
+  .accordion-wrpper {
+    width: 930px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .faq-component h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .accordion-wrpper {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accordion-wrpper {
+    width: 510px;
+  }
+  .arrow {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .accordion-wrpper {
+    width: 90%;
+  }
+}
